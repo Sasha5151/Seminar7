@@ -216,22 +216,26 @@ void PrintArray(int[,] array)
 {
     int rows = array.GetLength(0);
     int columns = array.GetLength(1);
-    for (int j = 0; j < columns; j++)
+    
+    for (int k = 0; k < length; k++)
     {
-         System.Console.Write(array[0 , j] + " "); 
-    }
-
-    for (int i = 1; i < rows; i++)
-    {
-        System.Console.Write(array[i , columns - 1] + " "); 
-    }
-
-    for (int j = columns-2 ; j >= 0; j--)
-    {
-         System.Console.Write(array[rows-1 , j] + " "); 
-    }
-    for (int i =rows - 2; i > 0; i--)
-    {
-        System.Console.Write(array[i , 0] + " "); 
+        
+    
+        for (int j = 0; j < columns; j++)
+        {
+            System.Console.Write(array[0 , j] + " "); 
+        }
+        for (int i = 1; i < rows; i++)
+        {
+            System.Console.Write(array[i , columns - 1] + " "); 
+        }
+        for (int j = columns-2 ; j >= 0; j--)
+        {
+            System.Console.Write(array[rows-1 , j] + " "); 
+        }
+        for (int i =rows - 2; i > 0; i--)
+        {
+            System.Console.Write(array[i , 0] + " "); 
+        }
     }
 }
